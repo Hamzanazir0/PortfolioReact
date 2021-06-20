@@ -326,10 +326,10 @@ const Home = () => {
           <div id="inspire" className="section full-screen full-width">
             <div className="section-wrapper block content-1170 center-relative">
               <div className="content-wrapper">
-                <script>
+                {/* <script>
                   var slider1_speed = "2000"; var slider1_auto = "true"; var
                   slider1_hover = "true";
-                </script>
+                </script> */}
                 <div className="image-slider-wrapper relative">
                   <div
                     id="slider1"

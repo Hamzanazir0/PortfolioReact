@@ -266,6 +266,7 @@ function memberContentLoadOnClick() {
 }
 
 function loadMemberContent(memberID) {
+  console.log("Load member before ajax");
   $.ajax({
     url: $('.ajax-member-content[data-id="' + memberID + '"]').attr("href"),
     type: "POST",
