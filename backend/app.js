@@ -39,7 +39,7 @@ app.use(function (err, req, res, next) {
 
 mongoose
   .connect(
-    "mongodb+srv://hamza:jnz3TYgc4QYvIZsv@myfirstcluster.aqbfk.mongodb.net/pofo?retryWrites=true&w=majority",
+    "mongodb://localhost/myReactPortfolio",
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => {
