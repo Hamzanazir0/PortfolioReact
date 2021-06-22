@@ -4,5 +4,5 @@ var teamSchema = mongoose.Schema({
   name: String,
 });
 
-var teamModel = mongoose.model("hello", teamSchema);
+var teamModel = mongoose.model("teams", teamSchema);
 module.exports = teamModel;
