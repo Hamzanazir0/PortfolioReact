@@ -268,7 +268,8 @@ function memberContentLoadOnClick() {
 function loadMemberContent(memberID) {
   $.ajax({
     url: $('.ajax-member-content[data-id="' + memberID + '"]').attr("href"),
-    type: "POST",
+    type: "GET",
+
     success: function (html) {
       var getHtml = $(html).find(".member-item-wrapper").html();
       $(".team-load-content-holder").append(
@@ -278,6 +279,7 @@ function loadMemberContent(memberID) {
           getHtml +
           "</div>"
       );
+      
       if (!$("#mcw-" + memberID + " .close-icon").length) {
         $("#mcw-" + memberID).prepend('<div class="close-icon"></div>');
       }
@@ -352,9 +354,10 @@ var portfolioItemContentLoadOnClick = function () {
 };
 
 function loadPortfolioItemContent(portfolioItemID) {
+
   $.ajax({
     url: $('.ajax-portfolio[data-id="' + portfolioItemID + '"]').attr("href"),
-    type: "POST",
+    type: "GET",
     success: function (html) {
       var getPortfolioItemHtml = $(html).find(".portfolio-item-wrapper").html();
       $(".portfolio-load-content-holder").append(
@@ -364,13 +367,16 @@ function loadPortfolioItemContent(portfolioItemID) {
           getPortfolioItemHtml +
           "</div>"
       );
+      
       if (!$("#pcw-" + portfolioItemID + " .close-icon").length) {
         $("#pcw-" + portfolioItemID).prepend('<div class="close-icon"></div>');
       }
+      
       $("html, body").animate(
         { scrollTop: $("#portfolio-wrapper").offset().top - 150 },
         400
       );
+
       setTimeout(function () {
         $("#pcw-" + portfolioItemID).imagesLoaded(function () {
           skillsFill();
@@ -480,7 +486,7 @@ var SendMail = function () {
       message: $("#message").val(),
     };
     $.ajax({
-      type: "POST",
+      type: "GET",
       url: "php/sendMail.php",
       data: params,
       success: function (response) {

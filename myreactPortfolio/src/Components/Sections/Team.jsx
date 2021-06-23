@@ -1,6 +1,24 @@
-import React from "react";
+import React , { useState } from "react";
+import axios from "axios"
 
-const team = () => {
+const Team = () => {
+
+  const [ Thref , setThref ] = useState(()=>{
+
+    setTimeout(() => {
+      console.log('Axios called!');
+      
+      axios.get("http://localhost:5000/team").then(res=>{
+        var dat = res.data;
+        dat.map(post=>{
+          return setThref(post.Thref)
+        })}).catch(err=>{
+          console.log("Error");
+        });
+    }, 2000);
+
+  });
+
   return (
     <div>
       <div id="team" className="section page-split">
@@ -33,13 +51,14 @@ const team = () => {
                       <li id="team-member-1" className="member-holder one_half">
                         <a
                           className="img-link ajax-member-content"
-                          href="team-1.html"
+                          href={Thref}
                           data-id="1"
                         >
                           <img
                             className="attachment-post-thumbnail"
                             src="images/HamzaTeam.jpg"
                             alt=""
+
                           />
                           <div className="member-mask">
                             <div className="member-info-holder">
@@ -63,4 +82,4 @@ const team = () => {
   );
 };
 
-export default team;
+export default Team;
