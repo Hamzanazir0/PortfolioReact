@@ -765,6 +765,10 @@ body .sm-clean li.current_page_item > a {
   color: white;
 }
 
+.portfolio-content a:hover{
+  color: greenyellow;
+}
+
 
 /* ===================================
     5. Inspire Section CSS

@@ -49,10 +49,10 @@ const Services = () => {
                           href="portfolio-1.html"
                           data-id="1"
                         >
-                          <img src="images/img_01s.jpg" alt="" />
+                          <img src="images/ecare/ecare (1).png" alt="" />
                           <div className="portfolio-text-holder">
-                            <p className="portfolio-title">Smartphone</p>
-                            <p className="portfolio-desc">BUSINESS CARDS</p>
+                            <p className="portfolio-title">E-UNIVERSAL CARE</p>
+                            <p className="portfolio-desc">RECRUITEMENT AND BOOKING</p>
                           </div>
                         </a>
                       </div>
@@ -66,10 +66,10 @@ const Services = () => {
                           href="portfolio-2.html"
                           data-id="2"
                         >
-                          <img src="images/img_02s.jpg" alt="" />
+                          <img src="images/invites/invites title.png" alt="" />
                           <div className="portfolio-text-holder">
-                            <p className="portfolio-title">At Work</p>
-                            <p className="portfolio-desc">PSD MOCKUP</p>
+                            <p className="portfolio-title">INVITES & VIDEOS</p>
+                            <p className="portfolio-desc">VIDEOS FOR LOVED ONES</p>
                           </div>
                         </a>
                       </div>
