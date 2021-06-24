@@ -66,10 +66,10 @@ const Services = () => {
                           href="portfolio-2.html"
                           data-id="2"
                         >
-                          <img src="images/invites/invites title.png" alt="" />
+                          <img src="images/invites/1.png" alt="" />
                           <div className="portfolio-text-holder">
                             <p className="portfolio-title">INVITES & VIDEOS</p>
-                            <p className="portfolio-desc">VIDEOS FOR LOVED ONES</p>
+                            <p className="portfolio-desc">ORDER VIDEOS</p>
                           </div>
                         </a>
                       </div>
@@ -83,41 +83,63 @@ const Services = () => {
                           href="portfolio-3.html"
                           data-id="3"
                         >
-                          <img src="images/img_10s.jpg" alt="" />
+                          <img src="images/rlclinic/rlclininc (1).png" alt="" />
                           <div className="portfolio-text-holder">
-                            <p className="portfolio-title">Carbon Bike</p>
-                            <p className="portfolio-desc">ULTRAFAST</p>
+                            <p className="portfolio-title">RL CLININC</p>
+                            <p className="portfolio-desc">CONSULTATION</p>
                           </div>
                         </a>
                       </div>
 
-                      <div className="grid-item element-item p_one_half">
+                      <div
+                        id="p-item-4"
+                        className="grid-item element-item p_one_half"
+                      >
                         <a
-                          className="item-link"
-                          href="images/img_05s.jpg"
-                          data-rel="prettyPhoto[portfolio]"
+                          className="item-link ajax-portfolio"
+                          href="portfolio-4.html"
+                          data-id="4"
                         >
-                          <img src="images/img_11s.jpg" alt="" />
+                          <img src="images/Logos/1.png" alt="" />
                           <div className="portfolio-text-holder">
-                            <p className="portfolio-title">Tower</p>
-                            <p className="portfolio-desc">SKYSCRAPER</p>
+                            <p className="portfolio-title">LOGOS</p>
                           </div>
                         </a>
                       </div>
+                     
+                      <div
+                        id="p-item-5"
+                        className="grid-item element-item p_one_half"
+                      >
+                        <a
+                          className="item-link ajax-portfolio"
+                          href="portfolio-5.html"
+                          data-id="5"
+                        >
+                          <img src="images/Banners/1.jpg" alt="" />
+                          <div className="portfolio-text-holder">
+                            <p className="portfolio-title">BANNERS AND COVERS</p>
+                          </div>
+                        </a>
+                      </div>
+{/* 
+                      <div id="p-item-6"
+                      className="grid-item element-item p_one">
+                        <a
+                          className="item-link ajax-portfolio"
+                          href="portfolio-6.html"
+                          data-rel="prettyPhoto[portfolio]"
+                          data-id="6"
+                        >
+                          <img src="images/Ads/1.jpg" alt="" />
+                          <div className="portfolio-text-holder">
+                            <p className="portfolio-title">ADS DESIGN</p>
+                            <p className="portfolio-desc">LIST OF ADS DESIGNED</p>
+                          </div>
+                        </a>
 
-                      <div className="grid-item element-item p_one">
-                        <a
-                          className="item-link"
-                          href="https://www.youtube.com/watch?v=15cpIHjEsWI"
-                          data-rel="prettyPhoto[portfolio]"
-                        >
-                          <img src="images/img_12s.jpg" alt="" />
-                          <div className="portfolio-text-holder">
-                            <p className="portfolio-title">A4 Paper</p>
-                            <p className="portfolio-desc">PSD MOCKUP</p>
-                          </div>
-                        </a>
-                      </div>
+                      </div> */}
+
                     </div>
                     <div className="clear"></div>
                   </div>

@@ -639,7 +639,7 @@ body .sm-clean li.current_page_item > a {
   display: inline-block;
   z-index: 1;
   opacity: 0;
-  transform: translate(-50%);
+  transform: translate(-50% , -50% );
   transition: all 0.3s ease;
   text-align: center;
 }
@@ -765,8 +765,28 @@ body .sm-clean li.current_page_item > a {
   color: white;
 }
 
-.portfolio-content a:hover{
+.portfolio-content.p1 a:hover{
   color: greenyellow;
+}
+
+.portfolio-content.p2 a:hover{
+  color: red;
+}
+
+.portfolio-content.p3 a:hover{
+  color: rgb(115, 227, 255);
+}
+
+.portfolio-content.p4 a:hover{
+  color:gold;
+}
+
+.portfolio-content.p5 a:hover{
+  color: brown;
+}
+
+.portfolio-content.p6 a:hover{
+  color:gold;
 }
 
 
